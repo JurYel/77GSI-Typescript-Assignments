@@ -1,3 +1,6 @@
 # ignore node_modules
 node_modules*
 node_modules*/*
+
+# ignore the test file for assignment 1
+TypescriptExe1

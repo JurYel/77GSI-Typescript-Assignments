@@ -1,5 +1,5 @@
-## Typescript Exercise 2 
 ## ISBN Validation 
+#### Day 1 Exercise 2 
 
 
 ## Sample output

@@ -12,11 +12,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Commands Used Throughout Exercise
 
-- Step 1: `ng new simple-crud`
+- Step 1: `ng new simple-crud` - create new project
 - Step 2: 
-	- `ng g m user`
-	- `ng g m book`
-	- `ng g m blog`
+	- `ng g m user` - create user module in app folder
+	- `ng g m book` - create book module in app folder
+	- `ng g m blog` - create blog module in app folder
 - Step 3: 
 	- User Module
 		- `ng g c user/pages/profile` - create profile component inside app/user/pages/profile
@@ -27,9 +27,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 		- `ng g i book/models/BookInterface interface` - create BookInterface inside app/book/models
 		- `ng g c book/components/book-item` - create book-item inside app/book/components
 	- Blog Module
-		- `ng g c blog/pages/blog-list`
-		- `ng g i blog/models/BlogInterface interface`
-		- `ng g c blog/components/blog-item`
+		- `ng g c blog/pages/blog-list` - create component inside app/blog/pages
+		- `ng g i blog/models/BlogInterface interface` - create BlogInterface in app/blog/models
+		- `ng g c blog/components/blog-item` - create blog-item component in app/blog/components
 - Step 4:
 	- `ng g s core/services/auth` - create auth service in core/services
 - Step 5:

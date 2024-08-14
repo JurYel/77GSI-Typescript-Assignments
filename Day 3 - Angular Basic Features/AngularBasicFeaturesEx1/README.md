@@ -1,4 +1,4 @@
-# Day 3 - Angular Basic Features Exercise 1
+# Day 3 - Angular First Features Exercise 1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
 

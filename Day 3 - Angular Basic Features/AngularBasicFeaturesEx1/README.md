@@ -14,7 +14,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 **`/blog` route**
 ![output2](output2.png?raw=true)
 
-**`/profile` route**
+**`/profile` route**<br>
 ![output3](output3.png?raw=true)
 
 ## Commands Used

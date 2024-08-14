@@ -25,6 +25,8 @@ Book List Page:
 - `ng g s modules/book/services/book`
 - `ng g i modules/models/book interface`
 - `ng g c modules/book/components/book-item`
+<br>
+
 Blog List Page:
 - `ng g m modules/blog`
 - `ng g m modules/blog/blog-routing --flat`
@@ -32,9 +34,13 @@ Blog List Page:
 - `ng g s modules/blog/services/blog`
 - `ng g i modules/models/blog interface`
 - `ng g c modules/blog/components/blog-item`
+<br>
+
 Profile Page:
 - `ng g m modules/user`
 - `ng g m modules/user/user-routing --flat`
+<br>
+
 Header and Command bar:
 - `ng g c shared/compnents/header`
 - `ng g c shared/components/command-bar`

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+
+* { 
+    box-sizing: border-box;
+    font-family: Inconsolata, sans-serif;
+}
+
+.wrapper {
+    width: 1100px;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 27px;
+    margin-left: 40px;
+    margin-bottom: -20px;
+}
+
+.blogs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+/* Book Form styles */
+
+.blog-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 40px;
+    border: 2px solid hsl(0, 0%, 39%);
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+.blog-form fieldset {
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 2px solid hsl(0, 0%, 39%);
+}
+
+.blog-form fieldset label {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.blog-form input {
+    margin-bottom: 12px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.blog-form textarea{
+    margin-bottom: 12px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 2px solid hsl(0, 0%, 39%);
+}
+
+input:nth-child(1), input:nth-child(2), 
+input:nth-child(4), textarea{
+    width: 250px;
+}
+
+.blog-form button {
+    padding: 9px 20px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    font-size: 16px;
+}
+
+.blog-form button:hover {
+    background-color: rgb(238, 198, 146);
+}
+
+/* List Styles */
+.blog-list {
+    padding: 20px 40px;
+    background-color:blanchedalmond;
+    border-radius: 10px;
+}

@@ -1,0 +1,15 @@
+
+<div>
+    <small>ID: {{book?.id}}</small> <br />
+    <span [className]="'book-name'">{{book?.name}}</span> <br />
+    <span [className]="'authors'">Authors</span><br/>
+    <ng-container *ngFor="let author of book?.authors">
+        <span [className]="'author'">{{author}}</span><br/>
+    </ng-container>
+    <span [className]="'book-isbn'">ISBN: {{book?.isbn}}</span> <br/>
+    <button (click)="sendEditAction()">Edit</button>
+    <button (click)="sendDeleteAction()">Delete</button>
+
+    <br />
+    <br />
+</div>

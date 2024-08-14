@@ -1,0 +1,25 @@
+<div [className]="'wrapper'">
+    <p>Profile!</p>
+
+    <form [className]="'profile-form'">
+        <input type="email" name="email" id="emailInput" placeholder="Enter email address...">
+        <input type="text" name="name" id="nameInput" placeholder="Enter name...">
+        <textarea name="bio" id="bioInput" placeholder="Enter your bio..."></textarea>
+        <fieldset [className]="'radio-set'">
+            <legend>Active:</legend>
+            <div>
+                <input type="radio" id="yes" name="active" value="yes" />
+                <label for="yes">Yes</label>
+            </div>
+        
+            <div>
+                <input type="radio" id="no" name="active" value="no" />
+                <label for="no">No</label>
+            </div>
+            
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+

@@ -1,0 +1,46 @@
+<div [className]="'wrapper'">
+    <p>Deep Learning Blogs</p>
+
+    <h3>Blogs List</h3>
+    <div [className]="'blogs-container'">
+        <div [className]="'blog-list'">
+            <ng-container *ngFor="let blog of blogsArray">
+                <app-blog-item [blogInput]="blog" (editActionEmitter)="executeEdit($event)" (deleteActionEmitter)="executeDelete($event)"></app-blog-item>
+            </ng-container>
+        </div>
+        <ng-container *ngIf="index !== -1">
+            <form [className]="'blog-form'" (ngSubmit)="handleEditAction()">
+                <input type="number" name="blog_id" [(ngModel)]="blogForm.blog_id" id="blogIdInput" placeholder="Enter blog id..." disabled={{disableInput}}>
+                <input type="text" name="title" [(ngModel)]="blogForm.title" id="blogTitleInput" placeholder="Enter blog title...">
+                <textarea name="description" rows="2" [(ngModel)]="blogForm.description" id="descriptionInput" placeholder="What is the blog about?"></textarea>
+                <input type="text" name="author" [(ngModel)]="blogForm.author" id="blogAuthorInput" placeholder="Enter author of blog...">
+                <fieldset>
+                    <label>Write comments for the blog</label>
+                    <textarea name="comment1" rows="2" [(ngModel)]="blogForm.comment1" id="commentInput" placeholder="What can you say about the blog?"></textarea>
+                    <textarea name="comment2" rows="2" [(ngModel)]="blogForm.comment2" id="commentInput" placeholder="What can you say about the blog?"></textarea>
+                    <textarea name="comment3" rows="2" [(ngModel)]="blogForm.comment3" id="commentInput" placeholder="What can you say about the blog?"></textarea>
+                    <textarea name="comment4" rows="2" [(ngModel)]="blogForm.comment4" id="commentInput" placeholder="What can you say about the blog?"></textarea>
+                    <textarea name="comment5" rows="2" [(ngModel)]="blogForm.comment5" id="commentInput" placeholder="What can you say about the blog?"></textarea>
+                </fieldset>
+                <button type="submit">Edit Blog</button>
+            </form>
+        </ng-container>
+        <ng-container *ngIf="index == -1">
+            <form [className]="'blog-form'" (ngSubmit)="handleAddAction()">
+                <input type="number" name="blog_id" [(ngModel)]="blogForm.blog_id" id="blogIdInput" placeholder="Enter blog id...">
+                <input type="text" name="title" [(ngModel)]="blogForm.title" id="blogTitleInput" placeholder="Enter blog title...">
+                <textarea name="description" rows="2" [(ngModel)]="blogForm.description" id="descriptionInput" placeholder="What is the blog about?"></textarea>
+                <input type="text" name="author" [(ngModel)]="blogForm.author" id="blogAuthorInput" placeholder="Enter author of blog...">
+                <fieldset>
+                    <label>Write comments for the blog</label>
+                    <textarea name="comment1" rows="2" [(ngModel)]="blogForm.comment1" id="commentInput" placeholder="What can you say about the blog?"></textarea>
+                    <textarea name="comment2" rows="2" [(ngModel)]="blogForm.comment2" id="commentInput" placeholder="What can you say about the blog?"></textarea>
+                    <textarea name="comment3" rows="2" [(ngModel)]="blogForm.comment3" id="commentInput" placeholder="What can you say about the blog?"></textarea>
+                    <textarea name="comment4" rows="2" [(ngModel)]="blogForm.comment4" id="commentInput" placeholder="What can you say about the blog?"></textarea>
+                    <textarea name="comment5" rows="2" [(ngModel)]="blogForm.comment5" id="commentInput" placeholder="What can you say about the blog?"></textarea>
+                </fieldset>
+                <button type="submit">Edit Blog</button>
+            </form>
+        </ng-container>
+    </div>
+</div>

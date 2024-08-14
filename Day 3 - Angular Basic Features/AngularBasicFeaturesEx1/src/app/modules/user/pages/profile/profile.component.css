@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+
+
+* { 
+    box-sizing: border-box;
+    font-family: Inconsolata, sans-serif;
+}
+
+.wrapper {
+    width: 340px;
+    margin: 50px 100px;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+}
+
+  
+input[type="radio"]{
+    margin: 0.4rem; 
+    padding: 0;
+}
+
+/* Book Form styles */
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border: 2px solid hsl(0, 0%, 39%);
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+.profile-form .radio-set {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding:5px;
+    outline: none;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 2px solid hsl(0, 0%, 39%);
+}
+
+.profile-form input[type="email"],
+.profile-form input[type="text"] {
+    margin-bottom: 12px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.radio-set div {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.radio-set div input {
+    padding: 0;
+    padding-right: -20px;   
+}
+
+textarea {
+    margin-bottom: 12px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 2px solid hsl(0, 0%, 39%);
+}
+
+input[type="email"], input[type="text"], textarea{
+    width: 100%;
+}
+
+.profile-form button {
+    padding: 9px 20px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    font-size: 16px;
+}
+
+.profile-form button:hover {
+    background-color: rgb(238, 198, 146);
+}

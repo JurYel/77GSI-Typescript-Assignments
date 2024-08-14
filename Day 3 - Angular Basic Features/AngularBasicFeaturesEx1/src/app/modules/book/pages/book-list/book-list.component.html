@@ -1,0 +1,43 @@
+<div [className]="'wrapper'">
+    <p>Book Library</p>
+
+    <h3>Book List</h3>
+    <div [className]="'books-container'">
+        <div [className]="'book-list'">
+            <ng-container *ngFor="let book of booksArray">
+                <app-book-item [bookInput]="book" (editActionEmitter)="executeEdit($event)" (deleteActionEmitter)="executeDelete($event)"></app-book-item>
+            </ng-container>
+        </div>
+        <ng-container *ngIf="index !== -1">
+            <form [className]="'book-form'" (ngSubmit)="handleEditAction()">
+                <input type="number" name="book_id" [(ngModel)]="bookForm.book_id"  id="bookIdInput" value={{booksArray[index].id}} placeholder="Enter book id..." disabled={{disableInput}}/>
+                <input type="text" name="book_name" [(ngModel)]="bookForm.book_name" id="bookNameInput" value={{booksArray[index].name}} placeholder="Enter book name..." />
+                <fieldset [className]="'authors-inputs'">
+                    <label>Provide the book's author/s</label>
+                    <!-- <ng-container *ngFor="let author of booksArray[index].authors">
+                        <input type="text" name="author1" [(ngModel)]="bookForm.author1" value={{author}} id="bookAuthorInput" placeholder="Enter book author 1..." />
+                    </ng-container> -->
+                    <input type="text" name="author1" [(ngModel)]="bookForm.author1" id="bookAuthorInput" placeholder="Enter book author 1..." required/>
+                    <input type="text" name="author2" [(ngModel)]="bookForm.author2" id="bookAuthorInput" placeholder="Enter book author 2..." />
+                    <input type="text" name="author3" [(ngModel)]="bookForm.author3" id="bookAuthorInput" placeholder="Enter book author 3..." />
+                </fieldset>
+                <input type="text" name="isbn" id="isbnInput"[(ngModel)]="bookForm.isbn" value={{booksArray[index].isbn}} placeholder="Enter book ISBN...">
+                <button type="submit">Edit Book</button>
+            </form>
+        </ng-container>
+        <ng-container *ngIf="index == -1">
+            <form [className]="'book-form'" (ngSubmit)="handleAddAction()">
+                <input type="number" name="book_id" [(ngModel)]="bookForm.book_id" id="bookIdInput" placeholder="Enter book id..." required/>
+                <input type="text" name="book_name" [(ngModel)]="bookForm.book_name" id="bookNameInput" placeholder="Enter book name..." required />
+                <fieldset [className]="'authors-inputs'">
+                    <label>Provide the book's author/s</label>
+                    <input type="text" name="author1" [(ngModel)]="bookForm.author1" id="bookAuthorInput" placeholder="Enter book author 1..." required/>
+                    <input type="text" name="author2" [(ngModel)]="bookForm.author2" id="bookAuthorInput" placeholder="Enter book author 2..." />
+                    <input type="text" name="author3" [(ngModel)]="bookForm.author3" id="bookAuthorInput" placeholder="Enter book author 3..." />
+                </fieldset>
+                <input type="text" name="isbn" [(ngModel)]="bookForm.isbn" id="isbnInput" placeholder="Enter book ISBN..." required/>
+                <button type="submit">Add Book</button>
+            </form>
+        </ng-container>
+    </div>
+</div>

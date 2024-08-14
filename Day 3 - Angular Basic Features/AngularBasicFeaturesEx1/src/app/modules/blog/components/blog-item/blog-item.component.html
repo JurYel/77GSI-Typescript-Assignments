@@ -1,0 +1,15 @@
+<div>
+    <small>ID: {{blog?.id}}</small> <br/>
+    <span [className]="'blog-title'">{{blog?.title}}</span> <br />
+    <span [className]="'description'">Description: {{blog?.description}}</span> <br/>
+    <span [className]="'author'">Author: {{blog?.author}}</span> <br />
+    <span [className]="'comments'">Comments</span><br/>
+    <ng-container *ngFor="let comment of blog?.comments">
+        <span [className]="'comment'">{{comment}}</span> <br/>
+    </ng-container>
+    <button (click)="sendEditAction()">Edit</button>
+    <button (click)="sendDeleteAction()">Delete</button>
+    
+    <br />
+    <br />
+</div>

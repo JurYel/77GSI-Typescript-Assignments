@@ -1,0 +1,11 @@
+
+<div class="container">
+    <h3 class="mb-3 mt-5">Blogs List</h3>
+    <app-command-bar (addActionEmitter)="executeAddAction()" (deleteActionEmitter)="executeDeleteAllAction()"></app-command-bar>
+    <ng-container *ngFor="let blog of blogsArray">
+        <app-blog-item [blogInput]="blog"></app-blog-item>
+        <app-item-command-bar [objectInput]="blog" (addActionEmitter)="executeEditAction(blog)" (deleteActionEmitter)="executeDeleteAction(blog)"></app-item-command-bar>
+        <br />
+        <br />
+    </ng-container>
+</div>

@@ -1,0 +1,11 @@
+<router-outlet></router-outlet>
+<div class="container">
+    <h3 class="mb-3 mt-5">Books Library</h3>
+    <app-command-bar (addActionEmitter)="executeAddAction()" (deleteAllActionEmitter)="executeDeleteAllAction()"></app-command-bar>
+    <ng-container *ngFor="let book of books$ | async">
+        <app-book-item [bookInput]="book"></app-book-item>
+        <app-item-command-bar [objectInput]="book" (addActionEmitter)="executeEditAction(book)" (deleteActionEmitter)="executeDeleteAction(book)"></app-item-command-bar>
+        <br/>
+        <br />
+    </ng-container>
+</div>

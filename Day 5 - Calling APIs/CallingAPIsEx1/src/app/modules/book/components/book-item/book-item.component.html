@@ -1,0 +1,11 @@
+<div>
+    <small>ID: {{book?.id}}</small> <br />
+    <span [className]="'book-name'">{{book?.name}}</span> <br />
+    <span [className]="'authors'">Authors</span><br/>
+    <ng-container *ngFor="let author of book?.authors">
+        <span [className]="'author'">{{author}}</span><br/>
+    </ng-container>
+    <span [className]="'book-isbn'">ISBN: {{book?.isbn}}</span> <br/>
+    <!-- <app-command-bar [objectInput]="book" (addActionEmitter)="executeEditAction($event)"></app-command-bar> -->
+
+</div>

@@ -1,0 +1,80 @@
+{
+  "books": [
+    {
+      "id": "1001",
+      "name": "Atomic Habits",
+      "authors": [
+        "James Clear"
+      ],
+      "isbn": "9758918"
+    },
+    {
+      "id": "1002",
+      "name": "Pride and Prejudice",
+      "authors": [
+        "Jane Austen",
+        "Austen Jane"
+      ],
+      "isbn": "87927841"
+    },
+    {
+      "id": "1003",
+      "name": "Moby-Dickk",
+      "authors": [
+        "Herman Melvillee",
+        "Alex Guthenbergg",
+        "Ella Watsong",
+        "Emma Jokic"
+      ],
+      "isbn": "97828371"
+    },
+    {
+      "id": "1004",
+      "name": "Something Something",
+      "authors": [
+        "Dionela Ruiz",
+        "Ian Goodfellows",
+        "Jasper Lopezz",
+        "Mark Joser"
+      ],
+      "isbn": "89128735"
+    }
+  ],
+  "blogs": [
+    {
+      "id": "24001",
+      "title": "RAG Architecture: Advanced RAG",
+      "description": "Advanced RAG for better LLM generation",
+      "author": "Andrew Karpathy",
+      "comments": [
+        "Awesome work Andrew!",
+        "Exceptional!",
+        "Interesting, I'll give it a try.",
+        "Oh wow, never thought about this."
+      ]
+    },
+    {
+      "id": "24002",
+      "title": "Cognitive LLM Agents",
+      "description": "Agents for complex transformations",
+      "author": "Fei-Fei Li",
+      "comments": [
+        "This is revolutionary!",
+        "Great work!",
+        "Slowly gravitating to AGI"
+      ]
+    },
+    {
+      "id": "24003",
+      "title": "Extrinsic Hallucinations in LLMs",
+      "description": "Factual content empahasis learning",
+      "author": "Yann LeCunn",
+      "comments": [
+        "Just what I was looking for!",
+        "You just saved my thesis!",
+        "Again with these hallucinations",
+        "Great!"
+      ]
+    }
+  ]
+}

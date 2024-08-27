@@ -1,0 +1,24 @@
+
+    <!-- <tr>
+        <td>{{blog?.id}}</td>
+        <td>{{blog?.title}}</td>
+        <td>{{blog?.description}}</td>
+        <td>{{blog?.author}}</td>
+        <td *ngFor="let comment of blog?.comments">
+            {{comment}} <br>
+            <hr>
+        </td>
+    </tr> -->
+
+<div>
+    <small>ID: {{blog?.id}}</small> <br/>
+    <span [className]="'blog-title'">{{blog?.title}}</span> <br />
+    <span [className]="'description'">Description: {{blog?.description}}</span> <br/>
+    <span [className]="'author'">Author: {{blog?.author}}</span> <br />
+    <span [className]="'comments'">Comments</span><br/>
+    <ng-container *ngFor="let comment of blog?.comments">
+        <span [className]="'comment'">{{comment}}</span> <br/>
+    </ng-container>
+    <!-- <app-item-command-bar [objectInput]="blog" (addActionEmitter)="executeEditAction(blog)"></app-item-command-bar> -->
+    
+</div>
